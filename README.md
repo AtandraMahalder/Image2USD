@@ -5,7 +5,7 @@ University of Florida
 
 Accepted at **WACV 2027**.
 
-[Paper](https://github.com/AtandraMahalder/Image2USD/releases/tag/v1.0/Main_Paper.pdf) · [Appendix](https://github.com/AtandraMahalder/Image2USD/releases/tag/v1.0/Appendix.pdf) · [3DR-Set assets (Zenodo)](https://zenodo.org/records/22151734?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6Ijg2OWU0NjhhLTBkZDUtNGE4MS1iNDQ5LTgyMWNkMTAxYTg5OSIsImRhdGEiOnt9LCJyYW5kb20iOiIyY2ZhNmE5OTVjZTNkM2U4MTc2NGFhNTk4YzYxNmY2NSJ9.Jdt5eQ3YDw6z5KrkK55_q8l4qGTWjM-fNfsIkit2h3WW7MR2QnJas-EGtX8m9RzgVu37jhQqw1wmPr92wjmB0Q)
+[Paper](https://github.com/AtandraMahalder/Image2USD/releases/download/v1.0/Main_Paper.pdf) · [Appendix](https://github.com/AtandraMahalder/Image2USD/releases/download/v1.0/Appendix.pdf) · [3DR-Set assets (Zenodo)](https://zenodo.org/records/22151734?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6Ijg2OWU0NjhhLTBkZDUtNGE4MS1iNDQ5LTgyMWNkMTAxYTg5OSIsImRhdGEiOnt9LCJyYW5kb20iOiIyY2ZhNmE5OTVjZTNkM2U4MTc2NGFhNTk4YzYxNmY2NSJ9.Jdt5eQ3YDw6z5KrkK55_q8l4qGTWjM-fNfsIkit2h3WW7MR2QnJas-EGtX8m9RzgVu37jhQqw1wmPr92wjmB0Q)
 
 <!-- TODO at release: replace the Appendix link with the uploaded Release asset URL. -->
 
