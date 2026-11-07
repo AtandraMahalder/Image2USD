@@ -94,6 +94,8 @@ unzip assets_bundle.zip -d assets
 
 ### Create 3DR-Set
 
+**Note:** 3DR-Set is regenerated from the asset pack rather than downloaded; the rendered dataset is ~1 TB.
+
 ```bash
 python create_3dr_set.py
 ```
