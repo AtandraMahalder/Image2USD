@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Image2USD: Scalable 3D Scene Reconstruction from a Single Image via Structured Scene Tokenization"
+authors:
+  - family-names: Mahalder
+    given-names: Atandra
+    affiliation: University of Florida
+  - family-names: Walker
+    given-names: Chase
+    affiliation: University of Florida
+  - family-names: Jha
+    given-names: Sumit Kumar
+    affiliation: University of Florida
+  - family-names: Ewetz
+    given-names: Rickard
+    affiliation: University of Florida
+license: MIT
+repository-code: "https://github.com/<GITHUB_USER>/Image2USD"
+preferred-citation:
+  type: conference-paper
+  title: "Image2USD: Scalable 3D Scene Reconstruction from a Single Image via Structured Scene Tokenization"
+  authors:
+    - family-names: Mahalder
+      given-names: Atandra
+    - family-names: Walker
+      given-names: Chase
+    - family-names: Jha
+      given-names: Sumit Kumar
+    - family-names: Ewetz
+      given-names: Rickard
+  collection-title: "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+  year: 2027

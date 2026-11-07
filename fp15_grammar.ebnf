@@ -1,0 +1,10 @@
+pos ::= "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+digit ::= "0" | pos
+mantissa ::= (pos digit digit | pos digit | digit) | ("-" pos digit digit | "-" pos digit | "-" pos)
+exp ::= "-" pos | digit
+number ::= "<" "FP" mantissa "/" exp ">"
+type_name ::= "<" ("blue_tin" | "mustard_jar" | "apple" | "kiwi" | "orange" | "pumpkin" | "book_01" | "book_02" | "book_11" | "book_15" | "book_22" | "alarm_clock" | "black_and_brass_bowl" | "decorative_bowl" | "fountain" | "elephant" | "geosphere" | "hearnoevil" | "metallinks" | "ovalmask" | "woodenbird" | "buddha" | "cell_vase_1" | "cell_vase_4" | "earthenware" | "japan_vase" | "vase_cylinder" | "plant_1" | "plant_2" | "cardbox_a1" | "cardbox_c1" | "fencing_a1" | "long_a1" | "pallet_c1" | "box_b04_white" | "box_b20_brown" | "crate_a1" | "crate_b1" | "chair_array" | "chair_meramec" | "arnold" | "dogtown" | "ferguson" | "forklift" | "packing_table" | "small_empty_a1" | "long_empty_a1" | "large_empty_a2" | "warehouse_1" | "warehouse_2" | "room") ">"
+prim ::= type_name number number number number number number number number number number number number
+camera ::= "<camera>"  number number number number number number
+prim_list ::= prim*
+root ::= camera prim_list "<end_of_file>"

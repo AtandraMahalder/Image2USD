@@ -1,0 +1,56 @@
+# =============================================================================
+# Image2USD — conda environment (one env covers everything EXCEPT rendering)
+# =============================================================================
+# Create with:   conda env create -f environment.yml
+#                conda activate image2usd
+#
+# This single env (Python 3.11 + torch 2.8) handles:
+#   - VLM (gemma) + ResNet training   (finetune_gemma.py, finetune_resnet.py)
+#   - inference                       (inference.py)
+#   - geometric metrics               (compute_geometric_metrics.py, kaolin)
+#   - visual metrics                  (compute_visual_metrics.py, lpips)
+# It merges the training/inference/geometric env (Image2USD) with the visual-
+# metric dep (lpips) from the render env (IG-USD). torch is pinned to 2.8 because
+# kaolin 0.18 has prebuilt wheels for torch 2.7/2.8 — NOT torch 2.11.
+#
+# Install torch / torchvision / kaolin with the CUDA build matching your GPU
+# (e.g. cu128 / cu129) and the NVIDIA kaolin wheel index.
+#
+# RENDERING + DATA GENERATION (render_*.py, generate_*.py) are NOT run in this
+# env — they need NVIDIA Isaac Sim, which ships its own Python and provides
+# `pxr`, `omni.*`, `isaacsim`, `carb`. Install Isaac Sim separately, `pip install`
+# shapely + trimesh + natsort into its Python, and run those scripts with
+# `<isaac>/python.sh`.
+# =============================================================================
+name: image2usd
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # --- deep learning core ---
+      - torch==2.8.0
+      - torchvision==0.23.0
+      - numpy==2.3.5
+      - pillow==12.1.1
+      - tqdm==4.67.3
+      - natsort==8.4.0
+      # --- VLM (gemma) training + grammar-constrained inference ---
+      - transformers==5.7.0
+      - transformers-cfg==0.2.7
+      - peft==0.19.1
+      - trl==1.3.0
+      - datasets==4.8.5
+      - accelerate==1.13.0
+      - safetensors==0.7.0
+      - sentencepiece==0.2.1
+      # --- metrics ---
+      - kaolin==0.18.0          # geometric metrics (compute_geometric_metrics.py)
+      - lpips==0.1.4            # visual metrics    (compute_visual_metrics.py)
+      - matplotlib==3.10.8
+      # --- USD authoring (inference create_stage) + scene geometry ---
+      - usd-core==26.5
+      - shapely==2.1.2
+      - trimesh==4.12.2
+      - scipy==1.17.1

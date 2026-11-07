@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+.conda/
+
+# Asset pack and generated data (download / generate locally)
+assets/
+assets_bundle.zip
+usd_data/
+train_data/
+test_data/
+testing_data/
+
+# Checkpoints and training outputs
+finetuned_gemma/
+finetuned_resnet/
+checkpoint-*/
+*.safetensors
+*.bin
+*.pt
+*.pth
+training_log.txt
+wandb/
+
+# Rendered outputs and USD
+*.usd
+*.usda
+*.usdc
+*.usdz
+*.png
+*.jpg
+!docs/**
+
+# Isaac Sim / Omniverse caches
+.nv/
+.cache/
+kit/
+*.log
+
+# Large PDFs (Appendix lives in GitHub Releases)
+Appendix.pdf
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
