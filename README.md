@@ -74,8 +74,6 @@ conda activate image2usd
 
 `environment.yml` pins `torch==2.8.0` because `kaolin==0.18.0` ships prebuilt wheels for torch 2.7/2.8 only. Install torch, torchvision, and kaolin with the CUDA build matching your GPU (see the comments in `environment.yml`).
 
-Fine-tuning uses `google/gemma-4-E4B-it` (or `gemma-4-E2B-it` with `--model_type gemma_4_2b`), which requires accepting the Gemma license on Hugging Face and logging in with `huggingface-cli login`.
-
 ### 2. NVIDIA Isaac Sim
 
 Rendering and data generation (`render_*.py`, `generate_*.py`) run inside Isaac Sim's bundled Python, which provides `pxr`, `omni.*`, `isaacsim`, and `carb`. Install Isaac Sim following the [official workstation instructions](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/install_workstation.html) to `~/isaacsim`, then install the extra dependencies into its Python:
